@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/vendor/konvajs/konva.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Fibev - Fibonacci everywhere</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="onImgURL()">
+    <div id="buttons">
+    <input type="text" value="https://astro-online.ru/tmp/thermo/400day.png" id="img_url" size=40 style="width:90%;"/>
+    <input type="button" onclick="onImgURL()" value="ОК"/>
+    <br>
+      <input id="fibo_show" type="button" value="" class="fibo_button_pressed">
+      <input id="fiboR" type="button" value="" class="fibo_button">R
+
+    <div id="settings" style="width:410px; height: 30px; white-space: nowrap;" onmouseover="fClearTimeout()">
+	<div id="fibo_setting" class="fibo_setting_hide" style="white-space: nowrap;">
+	    color:<input id="fibo_color_slider" type="range" min="1" max="15" step="1" value="4" />
+	    font:<input id="fibo_font_size_slider" type="range" min="1" max="26" step="1" value="6" />
+	</div>
+    </div>
+
+    <div id="stage-parent">
+      <div id="container"></div>
+    </div>
+
+    <script src="js/action.js"></script>
+  </body>
+</html>

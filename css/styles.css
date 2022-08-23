@@ -1,0 +1,40 @@
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f0f0f0;
+        height: 100%;
+        overflow: auto;
+      }
+    .fibo_button {
+	    background-image: url(../img/fibo_button.png); 
+	    /* background-color: transparent;  */
+	    background-color: #000; 
+	    background-repeat: no-repeat; 
+	    background-position: 0px 0px; 
+	    border: 2px solid #000;
+	    cursor: pointer;       
+	    height: 24px;
+	    width: 24px;
+	    padding-left: 10px;
+	    vertical-align: middle;
+	}
+    .fibo_button_pressed {
+	    background-image: url(../img/fibo_button_pressed.png); 
+	    background-color: #000; 
+	    background-repeat: no-repeat; 
+	    background-position: 0px 0px; 
+	    border: 2px solid #000;
+	    cursor: pointer;       
+	    height: 24px;
+	    width: 24px;
+	    padding-left: 10px;
+	    vertical-align: middle;
+	}
+
+    .fibo_setting_show {
+	display:block;
+    }
+    .fibo_setting_hide {
+	display:none;
+    }
